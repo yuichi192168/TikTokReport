@@ -312,7 +312,8 @@ if kurd2 == '3':
     time.sleep(3)
     while True:
         req600 = requests.post(url30, json=data30, headers=headers30).text
-        if '{"statusCode":0,"body":{"statusCode":0,"errMsg":"نشكرك على ملاحظاتك"},"errMsg":"نشكرك على ملاحظاتك"}' in req600:
+        if '{statusCode":0,"errMsg":"Thank you for your feedback"},"errMsg":"Thank you for your feedback"}' in req600:
+            
             print('\033[1;92m[+] bzhe BATA report royy')
         else:
             print('\033[0;92m[+] bzhe BATA report royy')
